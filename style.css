@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    margin: 0;
+    font-family:"Roboto",sans-serif;
+}
+
+
+li:first-child{
+    color: black;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F5F5F6;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 55px;
+    color: #959BA4;
+    align-items: center;
+}
+
+.nav-links li {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+}
+
+.login{
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    padding: 9px;
+    font-weight: 550;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 42px;
+    display: inline-block;
+    
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.converters{
+    display: flex;
+    gap: 50px;
+}
+
+.converter{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    gap: 20px;
+}
+
+.currency{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.currency button{
+    padding: 10px;
+    border-radius: 0;
+    border: 1px solid #C6C6C6;;
+    background-color: white;
+    color: #C6C6C6;
+}
+
+.currency button:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.currency button:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+}
+.currency button:nth-child(2){
+    border-left: none;
+}
+.currency button:nth-child(3){
+    border-left: none;
+}
+
+.input-one,.input-two{
+    border: 1px solid #C6C6C6;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.converter p{
+    color: #C6C6C6;    
+    margin-bottom: 0;
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 52px;
+}
+
+
+.selected{
+    background-color:#833AE0 !important;
+    color: white !important;
+}
+
+.error{
+    font-size: 32px;
+    color:red;
+}
+
+
+
+
+@media  screen and (max-width:991px) and (min-width:600px){
+    .nav ul{
+        gap: 2vw;
+        padding-left: 0;
+    }
+    .nav li{
+        font-size: 9px;
+    }
+    .converters{
+        gap: 20px;
+    }
+    .converter{
+        width: 40vw;
+    }
+    input{
+        font-size: 40px;
+    }
+    h1{
+        font-size: 46px;
+    }
+    .error{
+        font-size: 28px;
+    }
+}
+
+
+@media  screen and (max-width:600px) and (min-width:320px){
+    .nav{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .converters{
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .converter{
+        width: 65vw;
+    }
+    input{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    .container{
+        padding: 25px
+    }
+    .nav-links {
+        display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #FFF;
+        width: 200px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 10px;
+    }
+    .nav-links.show {
+        display: flex !important;
+    }
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+    .error{
+        font-size: 24px;
+    }
+}

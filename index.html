@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <img class="logo" src="imgs/logo.svg" alt="logo">
+        <ul class="nav-links">
+            <li>BANK</li>
+            <li>BUSINESS</li>
+            <li>INVESTMENTS</li>
+            <li>INSURANCE</li>
+            <li>MOBILE</li>
+            <li>TRIPS</li>
+            <li>ENTERTAINMENT</li>
+        </ul>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <button class="login">LOGIN</button>
+    </div>
+    
+    <div class="main">
+    <div class="container"> 
+        <h1>Online currency converter</h1>   
+        <div class="converters">
+            <div class="converter">
+                <p>I've got</p>
+                <div class="currency one">
+                    <button class="selected">RUB</button>
+                    <button>USD</button>
+                    <button>EUR</button>
+                    <button>GBP</button>
+                </div>
+                <div class="input-one">
+                    <input type="text" class="input1" maxlength="18">
+                    <p></p>
+                </div>
+            </div>
+            <div class="converter" >
+                <p>I want to buy</p>
+                <div class="currency two">
+                    <button>RUB</button>
+                    <button>USD</button>
+                    <button class="selected">EUR</button>
+                    <button>GBP</button>
+                </div>
+                <div class="input-two">
+                    <input type="text" class="input2" maxlength="18"/>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <p class="error"></p>
+    </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
